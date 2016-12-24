@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="UTF-8">
-      <title>...</title>
-      <link rel="stylesheet" href="main.css">
-   </head>
-  <body>
-      <button>Click me</button>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Просто событие onclick, вызывающее alert</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!--1. Инлайном-->
+    <button onclick="clickMeFunction()">Click me</button>
+    <!--2. Обращаемся по ID-->
+    <button id="button_first">Click me</button>
+</body>
+<script>
+    //1. Инлайном
+    function clickMeFunction() {
+        alert("it works");
+    }
+    //2. Обращаемся по ID
+    var buttonFirst = document.getElementById("button_first");
+    buttonFirst.onclick = function () {
+        alert("it works too");
+    }
+</script>
+
 </html>

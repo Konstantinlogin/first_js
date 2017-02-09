@@ -1,20 +1,43 @@
-
-    var buttonsInput=document.getElementsByTagName("input");
-    var buttonsTag=document.getElementsByTagName("button");
+    
+    /*++Inputs++*/
 
     
-    for(let i=0; i<buttonsInput.length; i++) {
+    const typeInput=document.getElementsByTagName("input");
 
-        if(buttonsInput[i].getAttribute("type")=="button") {
-            buttonsInput[i].className="b-button";
+    for(let i=0; i<typeInput.length; i++) {
+
+        // <input type="button"/>
+
+        if(typeInput[i].getAttribute("type")=="button") {
+            typeInput[i].className="b-button";
+        }
+
+        // <input type="submit"/>
+        
+        else if(typeInput[i].getAttribute("type")=="submit") {
+            typeInput[i].className="b-button";
+        }
+
+        // <input type="text"/>
+        
+        else if(typeInput[i].getAttribute("type")=="text") {
+            typeInput[i].className="b-input-text";
         }
 
     };
 
-    for(let i=0; i<buttonsTag.length; i++) {
 
-            buttonsTag[i].className="b-button";
-        
+    /*--Inputs--*/
+
+    //<button> </button>
+    const buttonsTag=document.getElementsByTagName("button");
+
+    for(let i=0; i<buttonsTag.length; i++) {
+        buttonsTag[i].className="b-button";
     };
+
+
+    
+
 
     

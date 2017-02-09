@@ -6,3 +6,12 @@
   border-radius: 4px;
   cursor: pointer;
   color: white; }
+
+.b-input-text {
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  height: 2rem;
+  width: auto;
+  max-width: 650px;
+  padding: 0 0.8em;
+  display: inline-block; }

@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Просто событие onclick, вызывающее alert</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script async src="main_js/styling.js"></script>
+    
 </head>
 
 <body>
     <!--1. Инлайном-->
-    <button onclick="clickMeFunction()">Click me</button>
+    <input type="button" value="Click me" onclick="clickMeFunction()"/>
     <!--2. Обращаемся по ID-->
     <button id="button_first">Click me</button>
 </body>
@@ -23,6 +25,9 @@
     buttonFirst.onclick = function () {
         alert("it works too");
     }
+
+
 </script>
+
 
 </html>

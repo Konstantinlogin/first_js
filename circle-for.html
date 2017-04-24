@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Цикл for</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script async src="main_js/addclasser.js"></script>
+</head>
+
+<body>
+
+    <input id="input_number" placeholder="сколько раз вывести алерт?" type="number">
+
+    <button id="button_circle">Применить</button>
+
+
+</body>
+<script>
+
+var inputNumber = document.getElementById("input_number");
+var buttonCircle = document.getElementById("button_circle")
+
+buttonCircle.onclick = function () {
+
+    for (i = inputNumber.value; i > 0; i --) {
+        alert(i);
+    }
+    
+}
+
+
+</script>
+
+
+</html>

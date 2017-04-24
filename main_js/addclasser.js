@@ -24,6 +24,10 @@
             typeInput[i].className="b-input-text";
         }
 
+        else if(typeInput[i].getAttribute("type")=="number") {
+            typeInput[i].className="b-input-text";
+        }
+
     };
 
 
